@@ -20,7 +20,7 @@ if X > 0 and  Y > 0:
     print('точка в 1-й четверти')
 elif X < 0 and Y > 0:
     print('точка во 2-й четверти')
-elif X <0 and Y < 0:
+elif X < 0 and Y < 0:
     print('точка в 3-й четверти')
 elif X > 0 and Y < 0:
     print('точка в 4-й четверти')
