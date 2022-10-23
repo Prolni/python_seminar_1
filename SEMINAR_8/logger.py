@@ -1,11 +1,11 @@
-# функция записи данных
+# ФОРМИРОВАНИЕ ДАННЫХ
 def write_new_data(a):
-    with open('seminar8_data.txt', 'a', encoding = 'utf-8') as f:
+    with open('data.txt', 'a', encoding = 'utf-8') as f:
         f.write(f'{a}')
     print('Данные записаны')
     print()
 
-# функция чтения данных
+# ЧТЕНИЕ ДАННЫХ
 def read_data():
     with open('seminar8_data.txt', 'r', encoding = 'utf-8') as f:
         return f.read()
@@ -13,7 +13,7 @@ def read_data():
 import re
 import os
 
-# функция перезаписи данных
+# ПЕРЕЗАПИСЬ ДАННЫХ
 def alter(file, old_str, new_str):
     with open(file, 'r', encoding = 'utf-8') as f1, open('%s.bak' % file, 'w', encoding = 'utf-8') as f2:
         for line in f1:

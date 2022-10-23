@@ -8,16 +8,16 @@ from model import editing_data as ed
 
 while True:
     mode = sm()
-    if mode == 1: # вызов функции добавления данных
+    if mode == 1: 
         wnd(addnd())
     
-    elif mode == 2: # вызов функции поиска данных
+    elif mode == 2: 
         print(ds(rd()))
 
-    elif mode == 3: # вызов функции вывода данных
+    elif mode == 3: 
         print(rd())
 
-    elif mode == 4: # вызов функции редактирования данных
+    elif mode == 4: 
         old_str = ds(rd())
         print(old_str)
         while old_str.count('\n') > 0:
@@ -27,7 +27,7 @@ while True:
         new_str = ed(old_str)
         alt('seminar8_data.txt', old_str, new_str)
 
-    elif mode == 0: # останов программы
+    elif mode == 0: 
         print('Работа закончена')
         break
     
